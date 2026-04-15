@@ -46,6 +46,7 @@ structured query language - struktureeritud päringu keel - структуиро
 - üks-mitmele (nt naine-lapsed)
 - mitme-mitmele (nt õpilased-tunnid)
 
- <img width="659" height="292" alt="{0AE7C9BE-AFE1-48EB-9FA1-82E263553D0F}" src="https://github.com/user-attachments/assets/db8fc0ff-3810-446f-967b-52b5d4819304" />
+ <img width="832" height="698" alt="{4A665A97-EA30-4FE1-A967-FA147218F1DD}" src="https://github.com/user-attachments/assets/769e3aec-3885-490b-9857-79346db486e3" />
+
 
   
