@@ -20,7 +20,9 @@ andmebaaside haldusega seotud sql kood ja konspektid
 ## Piirangud - Ограничения - Сonstraint (S)
 
 ## Andmetüübid
+```
 1. int, smallint, decimal(5,2) - numbrilised
 2. varchar(30), char(5), TEXT - tekst/sümbolised
 3. date, time, datetime - kuupäeva
 4. boolean, bit, bool - loogilised
+```
