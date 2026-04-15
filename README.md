@@ -31,3 +31,12 @@ andmebaaside haldusega seotud sql kood ja konspektid
 3. date, time, datetime - kuupäeva
 4. boolean, bit, bool - loogilised
 ```
+
+## Tabelivahelised seosed
+- üks-ühele (nt naine-mees)
+- üks-mitmele (nt naine-lapsed)
+- mitme-mitmele (nt õpilased-tunnid)
+
+ <img width="659" height="292" alt="{0AE7C9BE-AFE1-48EB-9FA1-82E263553D0F}" src="https://github.com/user-attachments/assets/db8fc0ff-3810-446f-967b-52b5d4819304" />
+
+  
