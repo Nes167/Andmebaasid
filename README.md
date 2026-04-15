@@ -18,6 +18,11 @@ andmebaaside haldusega seotud sql kood ja konspektid
 2. DML - Data Manipulation Language
 
 ## Piirangud - Ограничения - Сonstraint (S)
+1. PRIMARY KEY
+2. NOT NULL
+3. CHECK - valik
+4. UNIQUE
+5. FOREIGN KEY
 
 ## Andmetüübid
 ```
