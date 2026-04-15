@@ -1,6 +1,13 @@
 ## Andmebaasid
 andmebaaside haldusega seotud sql kood ja konspektid
 
+## Sisukord
+- [Põhimõisted](#põhimõisted)
+- [Piirangud](#piirangud - ограничения - constraint (s))
+- [SÕL](#sql - structured query language - struktureeritud päringu keel - структуированый язык запросов)
+- [Andmetüübid](#andmetüübid)
+- [Tabelivahelised seosed](#tabelivahelised seosed)
+
 ## Põhimõisted
 - Andmebaasi haldussüsteemid - tarkvara, millega abil saab luua andmebaas (mariaDB - XAMPP, SQL Server - SQL Server Management Studio)
 - Andmebaas - struktureeritud andmete kogum
