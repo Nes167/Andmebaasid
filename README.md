@@ -7,6 +7,7 @@ andmebaaside haldusega seotud sql kood ja konspektid
 - [SÕL](#sql)
 - [Andmetüübid](#andmetüübid)
 - [Tabelivahelised seosed](#tabelivahelised_seosed)
+- [Alter table](#alter_table)
 
 ## Põhimõisted
 - Andmebaasi haldussüsteemid - tarkvara, millega abil saab luua andmebaas (mariaDB - XAMPP, SQL Server - SQL Server Management Studio)
@@ -50,5 +51,18 @@ structured query language - struktureeritud päringu keel - структуиро
 
 ##ALTER_TABLE
 Tabeli struktuuri muutmine
-1. uue veeru lisamine
+```
+sql
+--1. uue veeru lisamine
+ALTER TABLE tootaja ADD testVeerg int;
+
+--2. veeru kustumine
+ALTER TABLE tootaja DROP COLUMN testVeerg;
+
+--3. andmetüübi muutmine veerus
+ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
+
+--struktuuri kontrollimiseks kasutame protseduuri sp_help
+sp_help tootaja;
+```
   
