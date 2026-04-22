@@ -49,7 +49,7 @@ structured query language - struktureeritud päringu keel - структуиро
 
  <img width="832" height="698" alt="{4A665A97-EA30-4FE1-A967-FA147218F1DD}" src="https://github.com/user-attachments/assets/769e3aec-3885-490b-9857-79346db486e3" />
 
-##ALTER_TABLE
+## ALTER_TABLE
 Tabeli struktuuri muutmine
 ```
 sql
