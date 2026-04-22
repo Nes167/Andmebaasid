@@ -85,3 +85,16 @@ WHERE koolitusID=2;
 
 INSERT INTO opetamine
 VALUES (4,1,0,2);
+
+--tabeli struktuuri muutmine
+--1. uue veeru lisamine
+ALTER TABLE tootaja ADD testVeerg int;
+
+--2. veeru kustumine
+ALTER TABLE tootaja DROP COLUMN testVeerg;
+
+--3. andmetüübi muutmine veerus
+ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
+
+--struktuuri kontrollimiseks kasutame protseduuri sp_help
+sp_help tootaja;
