@@ -6,7 +6,7 @@ andmebaaside haldusega seotud sql kood ja konspektid
 - [Piirangud](#piirangud)
 - [SÕL](#sql)
 - [Andmetüübid](#andmetüübid)
-- [Tabelivahelised seosed](#tabelivahelised seosed)
+- [Tabelivahelised seosed](#tabelivahelised_seosed)
 
 ## Põhimõisted
 - Andmebaasi haldussüsteemid - tarkvara, millega abil saab luua andmebaas (mariaDB - XAMPP, SQL Server - SQL Server Management Studio)
@@ -41,7 +41,7 @@ structured query language - struktureeritud päringu keel - структуиро
 4. boolean, bit, bool - loogilised
 ```
 
-## Tabelivahelised seosed
+## Tabelivahelised_seosed
 - üks-ühele (nt naine-mees)
 - üks-mitmele (nt naine-lapsed)
 - mitme-mitmele (nt õpilased-tunnid)
