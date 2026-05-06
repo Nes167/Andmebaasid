@@ -102,6 +102,7 @@ select * from categories
 --kutse kustutamiseks
 exec muudatus 'drop', 'categories', 'testVeerg', 'int'
 ```
+<img width="286" height="171" alt="{9FE9963C-E803-41AB-9E3E-AC55FBC866A9}" src="https://github.com/user-attachments/assets/3f968905-7b00-466c-aa5d-254828711783" />
 <img width="279" height="131" alt="{8884C860-E07B-4DEF-8592-63AEC45B9D09}" src="https://github.com/user-attachments/assets/6f0a075f-0a39-440d-bf6e-f814d14dec05" />
 <img width="285" height="152" alt="{76302BF9-1C21-44FD-83C0-125013C493AF}" src="https://github.com/user-attachments/assets/5c280134-c571-4574-8014-b0860c585f18" />
 
