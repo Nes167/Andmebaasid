@@ -69,3 +69,39 @@ EXEC suuremHind 400;
 <img width="265" height="109" alt="{BE22CFB6-6CE2-4787-AC21-2661B76D8482}" src="https://github.com/user-attachments/assets/d1b5512d-c48c-4da9-a787-6524c62c1796" />
 <img width="469" height="129" alt="{85099C03-DA9F-40E0-88F5-C1F7E672175B}" src="https://github.com/user-attachments/assets/d4a5cf69-d112-40e3-9d4c-56292e89cd8e" />
 
+```sql
+--Dünaamiline SQL protseduuris (ALTER TABLE) - universaalne protseduur, mis töötab üks kõik millese tabeliga
+--Protseduur veeru lisamiseks või kustutamiseks 
+--muudab struktuuri (veeru lisamine ADD, veeru kustutamine DROP)
+CREATE PROCEDURE muudatus
+    @tegevus varchar(10),
+    @tabelinimi varchar(25),
+    @veerunimi varchar(25),
+    @tyyp varchar(25) = NULL
+AS
+BEGIN
+    DECLARE @sqltegevus varchar(max);
+
+    SET @sqltegevus = CASE 
+        WHEN @tegevus = 'add' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' ADD ', @veerunimi, ' ', @tyyp)
+
+        WHEN @tegevus = 'drop' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' DROP COLUMN ', @veerunimi)
+    END;
+
+    PRINT @sqltegevus;
+    EXEC (@sqltegevus);
+END;
+
+--kutse lisamiseks
+exec muudatus 'add', 'categories', 'testVeerg', 'int'
+
+select * from categories
+
+--kutse kustutamiseks
+exec muudatus 'drop', 'categories', 'testVeerg', 'int'
+```
+<img width="279" height="131" alt="{8884C860-E07B-4DEF-8592-63AEC45B9D09}" src="https://github.com/user-attachments/assets/6f0a075f-0a39-440d-bf6e-f814d14dec05" />
+<img width="285" height="152" alt="{76302BF9-1C21-44FD-83C0-125013C493AF}" src="https://github.com/user-attachments/assets/5c280134-c571-4574-8014-b0860c585f18" />
+
