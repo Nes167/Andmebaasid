@@ -126,5 +126,7 @@ INSERT	Lisamine
 UPDATE	Muutmine
 DELETE	Kustutamine
 
+<img width="750" height="398" alt="image" src="https://github.com/user-attachments/assets/3c84ab57-18e9-4dc2-a525-3df7b9a5842b" />
+<img width="862" height="462" alt="image" src="https://github.com/user-attachments/assets/c89bcf56-8ba4-4bc8-bf62-96a058064934" />
 <img width="803" height="758" alt="image" src="https://github.com/user-attachments/assets/705ff6a4-e6ea-4433-936c-cf4d049d16f7" />
 
