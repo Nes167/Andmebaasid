@@ -207,8 +207,11 @@ Isikukood on Alternate Key, sest Primary Key on ID.
 
 ## Kasutatud allikad
 
-1. GeeksforGeeks – DBMS Keys (Primary Key, Foreign Key, Candidate Key, Super Key, Alternate Key jne)  
+1. GeeksforGeeks – Types of Keys in Relational Model (Primary, Foreign, Candidate, Super, Alternate, Composite jne)  
 https://www.geeksforgeeks.org/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/
 
-2. Microsoft Learn – SQL Server Documentation  
-https://learn.microsoft.com/en-us/sql/sql-server/
+2. Microsoft Learn – Primary and foreign key constraints – SQL Server  
+https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints
+
+3. Microsoft Learn – Unique constraints and check constraints – SQL Server  
+https://learn.microsoft.com/en-us/sql/relational-databases/tables/unique-constraints-and-check-constraints
