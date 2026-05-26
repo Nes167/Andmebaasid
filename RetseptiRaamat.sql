@@ -134,3 +134,51 @@ BEGIN
 	INSERT INTO koostis(kogus,retsept_retsept_id,toiduaine_id,yhik_id)
 	VALUES(@kogus,@retsept,@toiduaine,@yhik);
 END;
+
+EXEC lisaKoostis 1,5,5,4;
+
+
+CREATE PROCEDURE lisaTehtud
+@kuupaev DATE,
+@retsept INT
+AS
+BEGIN
+	INSERT INTO tehtud(tehtud_kp,retsept_id)
+	VALUES(@kuupaev,@retsept);
+	SELECT * FROM tehtud;
+END;
+
+EXEC lisaTehtud '2026-05-26',5;
+
+--Protseduur tabeli muutmiseks
+CREATE PROCEDURE muudaTabel
+	@tegevus VARCHAR(10),
+	@tabelinimi VARCHAR(50),
+	@veerunimi VARCHAR(50),
+	@tyyp VARCHAR(50)=NULL
+AS
+BEGIN
+	DECLARE @sqltegevus VARCHAR(MAX)
+
+	SET @sqltegevus = CASE
+		WHEN @tegevus='add' THEN
+			CONCAT ('ALTER TABLE ', @tabelinimi, ' ADD ', @veerunimi, ' ', @tyyp)
+
+		WHEN @tegevus='drop' THEN
+			CONCAT('ALTER TABLE ', @tabelinimi, ' DROP COLUMN ', @veerunimi)
+
+		WHEN @tegevus='alter' THEN
+			CONCAT('ALTER TABLE ', @tabelinimi, ' ALTER COLUMN ', @veerunimi, ' ', @tyyp)
+
+		END;
+
+	PRINT @sqltegevus;
+	EXEC(@sqltegevus);
+
+END;
+
+EXEC muudaTabel 'add','kasutaja','telefon','varchar(20)';
+EXEC muudaTabel 'alter','kasutaja','telefon','varchar(50)';
+EXEC muudaTabel 'drop','kasutaja','telefon';
+
+SELECT * FROM kasutaja;
