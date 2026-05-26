@@ -264,6 +264,35 @@ DENY INSERT ON toiduaine TO manager;
 GRANT SELECT, INSERT, UPDATE, DELETE ON retsept TO manager;
 GRANT SELECT, INSERT, UPDATE, DELETE ON koostis TO manager;
 
+--Staff kontroll 
+USE RetseptiRaamat;
+
+INSERT INTO toiduaine
+VALUES ('Banaan');
+
+SELECT * FROM kasutaja;
+
+UPDATE toiduaine SET toiduaine_nimi='Test'
+WHERE toiduaine_id=1;
+
+DELETE FROM kategooria
+WHERE kategooria_id=1;
+
+--Manager kontroll
+USE RetseptiRaamat;
+
+Insert INTO retsept
+VALUES ('Test','Test','Test','2026-05-26',1,1);
+
+SELECT * FROM retsept;
+
+INSERT INTO kasutaja
+VALUES('Test','Test','Test@gmail.com');
+
+INSERT INTO toiduaine
+VALUES('Test');
+
+
 
 
 
