@@ -182,3 +182,51 @@ EXEC muudaTabel 'alter','kasutaja','telefon','varchar(50)';
 EXEC muudaTabel 'drop','kasutaja','telefon';
 
 SELECT * FROM kasutaja;
+
+--SELECT-päringud
+
+--Päring kuvab kasutaja eesnime, perekonnanime ja tema retseptide nimetused.
+SELECT kasutaja.eesnimi, kasutaja.perenimi, retsept.retsepti_nimi FROM kasutaja, retsept
+WHERE kasutaja.kasutaja_id=retsept.kasutaja_id;
+
+--Päring kuvab retsepti nimetuse ja sellele vastava kategooria.
+SELECT retsept.retsepti_nimi,kategooria.kategooria_nimi FROM retsept, kategooria
+WHERE retsept.kategooria_id=kategooria.kategooria_id;
+
+--Päring kuvab koostises kasutatud toiduained ja nende kogused.
+SELECT toiduaine.toiduaine_nimi, koostis.kogus FROM toiduaine, koostis
+WHERE toiduaine.toiduaine_id=koostis.toiduaine_id;
+
+
+--Lisatöö
+
+CREATE TABLE kommentaar(
+kommentaar_id INT IDENTITY(1,1) PRIMARY KEY,
+tekst VARCHAR(200),
+retsept_id INT,
+FOREIGN KEY(retsept_id) REFERENCES retsept(retsept_id));
+
+CREATE PROCEDURE lisaKommentaar
+@tekst VARCHAR(200),
+@retsept INT
+AS
+BEGIN
+	INSERT INTO kommentaar
+	VALUES(@tekst,@retsept);
+	SELECT * FROM kommentaar;
+END;
+
+EXEC lisaKommentaar 'Teen uuesti', 5;
+
+--kirjete kustutamiseks protseduur
+CREATE PROCEDURE kustutaKommentaar
+@id INT
+AS
+BEGIN
+	DELETE FROM kommentaar
+	WHERE kommentaar_id=@id;
+	SELECT * FROM kommentaar;
+END;
+
+
+EXEC kustutaKommentaar 1
