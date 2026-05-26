@@ -229,4 +229,41 @@ BEGIN
 END;
 
 
-EXEC kustutaKommentaar 1
+EXEC kustutaKommentaar 1;
+
+--kasutaja staff õigused
+--omab ligipääsu tabelitele: toiduaine, kategooria, kasutaja
+GRANT SELECT ON kasutaja TO staff;
+GRANT SELECT ON toiduaine TO staff;
+GRANT SELECT ON kategooria TO staff;
+
+--tohib lisada ja vaadata toiduaineid ja kategooriaid
+GRANT INSERT ON toiduaine TO staff;
+GRANT INSERT ON kategooria TO staff;
+
+--ei tohi muuta ega kustutada toiduaineid ja kategooriaid
+DENY UPDATE, DELETE ON toiduaine TO staff;
+DENY UPDATE, DELETE ON kategooria TO staff;
+--tabelis kasutaja on lubatud ainult vaatamine
+DENY INSERT, UPDATE, DELETE ON kasutaja TO staff;
+
+--kasutaja manager õigused
+--omab ligipääsu kõigile tabelitele
+GRANT SELECT ON kasutaja TO manager;
+GRANT SELECT ON toiduaine TO manager;
+GRANT SELECT ON kategooria TO manager;
+GRANT SELECT ON yhik TO manager;
+GRANT SELECT ON tehtud TO manager;
+GRANT SELECT ON kommentaar TO manager;
+
+--ei tohi lisada uusi toiduaineid (toiduaine) ega uusi kasutajaid (kasutaja)
+DENY INSERT ON kasutaja TO manager;
+DENY INSERT ON toiduaine TO manager;
+
+--omab täielikku haldusõigust retseptidega seotud tabelites (retsept ja koostis)
+GRANT SELECT, INSERT, UPDATE, DELETE ON retsept TO manager;
+GRANT SELECT, INSERT, UPDATE, DELETE ON koostis TO manager;
+
+
+
+
