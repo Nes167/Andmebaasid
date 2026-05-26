@@ -1,7 +1,9 @@
+--Loodi andmebaas
 CREATE DATABASE RetseptiRaamat;
 
 USE RetseptiRaamat;
 
+--Loodud tabelid
 CREATE TABLE kasutaja (
 kasutaja_id INT PRIMARY KEY IDENTITY(1,1),
 eesnimi VARCHAR(50),
