@@ -1,6 +1,6 @@
 ## Trigger XAMPP
 
-[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](triger.md) | [Triggerid XAMPP](trigeridXAMPP.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](küsimused.md)
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](triger.md) | [Triggerid XAMPP](trigerXAMPP.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](küsimused.md)
 
 <img width="683" height="664" alt="{8F1111DF-5CE8-4291-88E7-3730A9857487}" src="https://github.com/user-attachments/assets/f8e99773-95d0-49e9-8b54-d22f84eb89b0" />
 
