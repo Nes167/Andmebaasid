@@ -1,5 +1,7 @@
 ## DDL: CREATE TABLE, ALTER TABLE. Andmete defineerimise laused
 
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](triger.md) | [Triggerid XAMPP](trigeridXAMPP.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](küsimused.md)
+
 <img width="969" height="216" alt="{C3F10615-5D86-4B93-A65E-7343ED28A86E}" src="https://github.com/user-attachments/assets/87867ba6-cbc3-4437-850c-12ec8ca4e152" />
 
 <img width="1064" height="363" alt="{21BE22E5-C81B-4BA9-9DBD-7D6F38A7E9FA}" src="https://github.com/user-attachments/assets/415c9a9a-4007-450b-8234-e18db1aaff02" />
