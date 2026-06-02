@@ -142,4 +142,9 @@ SELECT * FROM linnad;
 SELECT * FROM logi;
 ```
 
+EXEC sp_helptext 'linnaUuendamine';
+
+
+<img width="443" height="338" alt="{D1C0E6C3-9706-45AB-AD67-3CCDA08EBCE3}" src="https://github.com/user-attachments/assets/0a318387-2bce-47d1-869b-1ce53faf7dfa" />
+
 
