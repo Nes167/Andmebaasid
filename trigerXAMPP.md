@@ -4,7 +4,7 @@
 INSERT INTO logi(kuupaev, kasutaja, toiming, andmed)
 SELECT
 NOW(),
-USER,
+USER(),
 'on tehtud INSERT käsk', 
 concat('linn: ', NEW.linnanimi, ', rahvaarv: ', NEW.rahvaarv)
 FROM linnad
