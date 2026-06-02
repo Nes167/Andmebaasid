@@ -1,4 +1,7 @@
-## Andmebaasid
+## Andmebaaside Anastassia konspektid
+
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Trigerid](triger.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) 
+
 andmebaaside haldusega seotud sql kood ja konspektid
 
 ## Sisukord
