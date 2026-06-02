@@ -1,3 +1,7 @@
+## XAMPP Kasutajate autentimine ja õiguste haldamine
+
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](triger.md) | [Triggerid XAMPP](trigeridXAMPP.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](küsimused.md)
+
 1. Server-->Kasutajate kontod
 
 <img width="1477" height="832" alt="image" src="https://github.com/user-attachments/assets/35d0e51b-f138-43c2-b826-a68e101d201b" />
