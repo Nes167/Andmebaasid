@@ -1,7 +1,3 @@
-## ALTER TABLE
-
-[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](triger.md) | [Triggerid XAMPP](trigeridXAMPP.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Create/Insert](CREATE_INSERT.sql) | [ALTER TABLE](ALTER.sql) | [Küsimused](küsimused.md)
-
 DROP Database Maybabaas;
 
 Create Database Maybabaas;
