@@ -48,6 +48,13 @@ WHERE a.linnID=NEW.linnID
 <img width="1010" height="435" alt="{3976962F-6F0F-488C-B7E6-5FD2FAD2F614}" src="https://github.com/user-attachments/assets/c4a83610-1e9c-4448-96e5-ecf6250c4ef1" />
 
 
+<img width="1173" height="257" alt="{6232204B-5834-47A2-89A1-B188C35BE3BA}" src="https://github.com/user-attachments/assets/99f75402-1517-4ab3-abf0-8f2bb3a58fda" />
+
+
+<img width="1371" height="530" alt="{F5B76CA7-DEAB-495B-85A6-0A1C4A42E865}" src="https://github.com/user-attachments/assets/f51359cf-49bd-4d38-8c71-4f76ee0bfd55" />
+
+
+<img width="1088" height="313" alt="{F19AC81A-F611-4D36-84C5-3CF7C4E9779E}" src="https://github.com/user-attachments/assets/9d650593-bfc0-4b21-8ea3-6f9f526e7d11" />
 
 
 
