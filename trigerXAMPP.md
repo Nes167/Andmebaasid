@@ -57,6 +57,9 @@ WHERE a.linnID=NEW.linnID
 <img width="1088" height="313" alt="{F19AC81A-F611-4D36-84C5-3CF7C4E9779E}" src="https://github.com/user-attachments/assets/9d650593-bfc0-4b21-8ea3-6f9f526e7d11" />
 
 
+<img width="1310" height="513" alt="{9A64F0F1-4A77-423E-9E3F-716B1F5F0A80}" src="https://github.com/user-attachments/assets/0d54ad0c-c213-409e-8b84-36e44bfb52d9" />
+
+
 
 
 
