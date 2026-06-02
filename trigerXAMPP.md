@@ -28,7 +28,9 @@ WHERE linnad.linnID=OLD.linnID
 ```
 
 
-<img width="696" height="684" alt="{65D308BF-D39D-403A-977F-824CF735102C}" src="https://github.com/user-attachments/assets/dbcc946c-b8c1-41ce-825c-650d3786caef" />
+
+<img width="690" height="638" alt="{0573DE99-7293-47E8-BF60-2E0A4D1472AB}" src="https://github.com/user-attachments/assets/16fb7780-42d7-4c54-90be-8116b034c430" />
+
 
 ```sql
 INSERT INTO logi(kuupaev, kasutaja, toiming, andmed)
@@ -36,13 +38,15 @@ SELECT
 NOW(),
 USER(),
 'on tehtud UPDATE käsk',
-concat('vanad : ', OLD.linnanimi, ',',  OLD.rahvaarv, 'uued: ', NEW.linnanimi, ', ', NEW.rahvaarv)
+concat('vanad : ', OLD.linnanimi, ',',  OLD.rahvaarv, '\n uued: ', NEW.linnanimi, ', ', NEW.rahvaarv)
 FROM linnad a INNER JOIN linnad b
 ON a.linnID=b.linnID
 WHERE a.linnID=NEW.linnID
 ```
 
-<img width="1001" height="362" alt="{CFF0AB66-8ED1-4586-A8CF-B3B3148E0778}" src="https://github.com/user-attachments/assets/dea375f0-a80b-442c-9551-aebff6fc1448" />
+
+<img width="1010" height="435" alt="{3976962F-6F0F-488C-B7E6-5FD2FAD2F614}" src="https://github.com/user-attachments/assets/c4a83610-1e9c-4448-96e5-ecf6250c4ef1" />
+
 
 
 
