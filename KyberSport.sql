@@ -51,8 +51,9 @@ INSERT INTO logi(kuupaev, kasutaja, sisestatudAndmed)
 SELECT
 GETDATE(),
 SYSTEM_USER,
-concat('Kustutatud KyberRyhmNimi: ', deleted.KyberRyhmNimi, ', OsalejateArv: ', deleted.OsalejateArv, 'MangID: ', deleted.MangID)
-FROM deleted;
+concat('Kustutatud KyberRyhmNimi: ', deleted.KyberRyhmNimi, ', OsalejateArv: ', deleted.OsalejateArv, 'MangID: ', deleted.MangID,  ' MangNimi: ', Mang.MangNimi)
+FROM deleted INNER JOIN Mang ON Mang.MangID=deleted.MangID;
+
 
 CREATE TRIGGER KyberSportLisamine
 ON KyberSport 
@@ -62,8 +63,8 @@ INSERT INTO logi(kuupaev, kasutaja, sisestatudAndmed)
 SELECT
 GETDATE(),
 SYSTEM_USER,
-concat('Sisestatud KyberRyhmNimi: ', inserted.KyberRyhmNimi, ', OsalejateArv: ', inserted.OsalejateArv, 'MangID: ', inserted.MangID)
-FROM inserted;
+concat('Sisestatud KyberRyhmNimi: ', inserted.KyberRyhmNimi, ', OsalejateArv: ', inserted.OsalejateArv, 'MangID: ', inserted.MangID  ' MangNimi: ', Mang.MangNimi)
+FROM inserted INNER JOIN Mang ON Mang.MangID=inserted.MangID;
 
 
 SELECT * FROM logi;
